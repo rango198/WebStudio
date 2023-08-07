@@ -798,6 +798,21 @@ input.footer-input::placeholder {
   column-gap: 24px;
   row-gap: 48px;
 }
+.text-title-filter {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.main-text-filter {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
 .card-text {
   padding: 32px 16px;
   border: 1px solid var(--border-color-filter);
@@ -831,6 +846,36 @@ input.footer-input::placeholder {
  | Mobile-menu
  |============================
 */
+/* burger-menu-icon */
+.burger-menu {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 32px;
+  height: 22px;
+}
+.burger-menu span {
+  width: 32px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: var(--text-color);
+}
+.burger-menu::before,
+.burger-menu::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 1px;
+  background-color: var(--text-color);
+}
+.burger-menu::before {
+  top: 0;
+}
+.burger-menu::after {
+  bottom: 0;
+}
+/* mobile-menu */
 .mobile-icon-menu {
   fill: var(--text-color);
 }
@@ -958,14 +1003,18 @@ input.footer-input::placeholder {
       url(../images/hero-bg-mobile.jpg);
   }
   /* Portfolio */
+  .section-filter {
+    padding: 48px 0;
+  }
   .button-type {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 400px;
     gap: 24px;
-    margin: 72px auto;
+    margin: auto;
   }
   .gallery {
+    margin-top: 48px;
     align-items: center;
     flex-direction: column;
   }
@@ -1005,6 +1054,14 @@ input.footer-input::placeholder {
   }
   .checkbox-link {
     padding-right: 124px;
+  }
+  /* Portfolio */
+  .list-gallery {
+    width: calc(100% - 5px);
+    margin: 0;
+  }
+  .button-type {
+    width: 300px;
   }
 }
 
