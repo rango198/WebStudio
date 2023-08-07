@@ -957,6 +957,24 @@ input.footer-input::placeholder {
       ),
       url(../images/hero-bg-mobile.jpg);
   }
+  /* Portfolio */
+  .button-type {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 400px;
+    gap: 24px;
+    margin: 72px auto;
+  }
+  .gallery {
+    align-items: center;
+    flex-direction: column;
+  }
+  .list-gallery {
+    width: 396px;
+  }
+  .img-card {
+    width: 100%;
+  }
 }
 
 @media (min-resolution: 192dpi) and (max-width: 767px) {
@@ -1065,6 +1083,19 @@ input.footer-input::placeholder {
   .footer-input {
     width: 264px;
   }
+  /* Portfolio */
+  .gallery {
+    width: 736px;
+    margin: auto;
+    justify-content: flex-start;
+    gap: 72px 24px;
+  }
+  .list-gallery {
+    width: 356px;
+  }
+  .img-card {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (min-resolution: 192dpi) {
@@ -1154,7 +1185,7 @@ input.footer-input::placeholder {
     flex-direction: row;
   }
 }
-@media(min-width: 1158px) and (min-resolution: 192dpi) {
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
   .section-main {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
