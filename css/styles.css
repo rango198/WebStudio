@@ -424,7 +424,7 @@ input[type='checkbox']:checked + label > span {
 }
 .main-text {
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.06em;
   font-size: 16px;
   color: var(--main-text-color);
   text-align: left;
